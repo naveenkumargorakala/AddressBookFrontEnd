@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Address.css" rel="stylesheet">
+    <script defer src="AddressBook.js" ></script>
+    <title>AddressBook</title>
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="logo.jpeg" alt="No Image">
+            <div>
+                <span class="add-txt" >Address</span><br>
+                <span class="add-txt address-txt">Book</span>
+            </div>
+        </div>
+    </header>
+    <div class="form-content">
+        <form class="form">
+            <div class= "form-header">
+                <span> PERSON HEADER FORM </span> 
+                <div class="cancel-logo">
+                    <img src="cancelButton.png" width=30 height=30 alt="">
+                </div>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="name">Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Enter Your name">
+            </div>
+            <div class="row-content">
+                <label class="label text" for="address">Address</label>
+                <textarea class="input" id="address" name="address" placeholder="Enter Your Address" style="height:100"></textarea>
+            </div>
+            <div class="row-content" >
+                <label class="label text"></label>
+                <div class="select-content">
+                    <select class="select" id="day" name="Day">
+                        <option value="Select City">Select City</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="NewDelhi"> NewDelhi</option>
+                        <option value="panaji">panaji</option>
+                        <option value="Banglore"></option>
+                    </select>
+                </div>
+           
+                <div class="select-content">
+                    <select class="select" id="day" name="Day">
+                        <option value="Select State">Select State</option>
+                        <option value="WestBengal">West Bengal</option>
+                        <option value="MahaRastra">MahaRastra</option>
+                        <option value="Delhi"> Delhi</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Karnataka">Karnataka</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input class="select" type="number" id="zipcode" name="zipcode" placeholder="zipcode">
+                </div>
+            </div> 
+            <div class="row-content" >
+                <label class="label text" for="phoneNumber" >Phone Number</label>
+                <input class="input" type="numbers" id="phonenumber" name="phoneNumber" placeholder="Enter Your PhoneNumber">
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>
